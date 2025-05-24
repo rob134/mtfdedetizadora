@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MTF Dedetizadora oferece serviços profissionais de dedetização, desratização, descupinização e limpeza de caixas d'água em Jarinu, Itatiba e Morungaba. Solicite um orçamento!">
+    <meta name="keywords" content="dedetização, desratização, descupinização, limpeza de caixa d'água, controle de pragas, Jarinu, Itatiba, Morungaba, MTF Dedetizadora">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="MTF Dedetizadora">
+    <!-- Open Graph -->
+    <meta property="og:title" content="MTF Dedetizadora - Controle de Pragas Profissional em Jarinu, Itatiba e Morungaba">
+    <meta property="og:description" content="Soluções completas em dedetização, desratização, descupinização e limpeza de caixas d'água. Atendemos Jarinu, Itatiba e Morungaba.">
+    <meta property="og:image" content="https://www.mtfdedetizadora.com.br/logo.png">
+    <meta property="og:url" content="https://www.mtfdedetizadora.com.br">
+    <meta property="og:type" content="website">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MTF Dedetizadora - Controle de Pragas Profissional">
+    <meta name="twitter:description" content="Serviços de dedetização, desratização, descupinização e limpeza de caixas d'água em Jarinu, Itatiba e Morungaba.">
+    <meta name="twitter:image" content="https://www.mtfdedetizadora.com.br/logo.png">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>MTF Dedetizadora - Controle de Pragas Profissional em Jarinu, Itatiba e Morungaba</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9fafb;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Header */
+        .header {
+            background: white;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo img {
+            height: 120px;
+        }
+
+        .nav {
+            display: none;
+            gap: 1.5rem;
+        }
+
+        .nav a {
+            color: #374151;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .nav a:hover {
+            color: #a52019;
+        }
+
+        .phone-btn {
+            background: #a52019;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.375rem;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.875rem;
+        }
+
+        .phone-btn:hover {
+            background: #8a1a15;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(to right, #a52019, #c82c2c);
+            padding: 3rem 0;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-text h1 {
+            font-size: 2.25rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .hero-text p {
+            font-size: 1.125rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .whatsapp-btn {
+            background: #25d366;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.375rem;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .whatsapp-btn:hover {
+            background: #20b858;
+        }
+
+        .phone-btn-outline {
+            background: transparent;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: 2px solid white;
+            border-radius: 0.375rem;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .phone-btn-outline:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        /* Services Section */
+        .services {
+            padding: 3rem 0;
+            background: white;
+        }
+
+        .services h2 {
+            text-align: center;
+            font-size: 1.75rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            color: #374151;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .service-icon {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 0.75rem;
+        }
+
+        .service-icon i {
+            font-size: 2rem;
+            color: #a52019;
+        }
+
+        .service-card h3 {
+            font-size: 1.125rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #374151;
+        }
+
+        .service-card p {
+            color: #6b7280;
+            font-size: 0.875rem;
+        }
+
+        /* About Section */
+        .about {
+            padding: 3rem 0;
+            background: #f9fafb;
+        }
+
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .about-text h2 {
+            font-size: 1.75rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: #374151;
+        }
+
+        .about-text p {
+            color: #6b7280;
+            margin-bottom: 0.75rem;
+        }
+
+        .tecnico-info h3 {
+            font-size: 1.125rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #374151;
+        }
+
+        .tecnico-card {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .tecnico-avatar {
+            background: #1e3a8a;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .tecnico-details h4 {
+            font-size: 1rem;
+            font-weight: bold;
+            color: #374151;
+        }
+
+        .tecnico-details p {
+            color: #6b7280;
+            font-size: 0.875rem;
+        }
+
+        .benefits-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+        }
+
+        .benefits-card h3 {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 0.75rem;
+            color: #374151;
+        }
+
+        .benefits-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .benefit-item {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .benefit-check {
+            background: #a52019;
+            border-radius: 50%;
+            width: 1.25rem;
+            height: 1.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.625rem;
+            flex-shrink: 0;
+            margin-top: 0.125rem;
+        }
+
+        .benefit-content h4 {
+            font-weight: bold;
+            color: #374151;
+            font-size: 0.875rem;
+        }
+
+        .benefit-content p {
+            color: #6b7280;
+            font-size: 0.75rem;
+        }
+
+        /* Instagram Section */
+        .instagram {
+            padding: 3rem 0;
+            background: white;
+            text-align: center;
+        }
+
+        .instagram h2 {
+            font-size: 1.75rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            color: #374151;
+        }
+
+        .instagram-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            max-width: 100%;
+            margin: 0 auto;
+            justify-content: center;
+        }
+
+        .instagram-frame {
+            width: 300px;
+            height: 300px;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            overflow: hidden;
+            background: #f9fafb;
+            transition: transform 0.2s ease;
+        }
+
+        .instagram-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .instagram-frame:hover {
+            transform: scale(1.02);
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 3rem 0;
+            background: #1e3a8a;
+            color: white;
+        }
+
+        .contact-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .contact h2 {
+            font-size: 1.75rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            max-width: 64rem;
+            margin: 0 auto;
+        }
+
+        .contact-card {
+            background: white;
+            color: #333;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+        }
+
+        .contact-card h3 {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 0.75rem;
+            color: #1e3a8a;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .contact-icon {
+            color: #a52019;
+            width: 1rem;
+            height: 1rem;
+        }
+
+        .contact-details h4 {
+            font-weight: 500;
+            color: #374151;
+            font-size: 0.875rem;
+        }
+
+        .contact-details p {
+            font-size: 1rem;
+            color: #111827;
+        }
+
+        .contact-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .contact-buttons p {
+            font-weight: 500;
+            margin-bottom: 0.75rem;
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.375rem;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            font-weight: 500;
+        }
+
+        .btn-primary {
+            background: #a52019;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #8a1a15;
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: #1e3a8a;
+            border: 2px solid #1e3a8a;
+        }
+
+        .btn-outline:hover {
+            background: #1e3a8a;
+            color: white;
+        }
+
+        /* Footer */
+        .footer {
+            background: #374151;
+            color: white;
+            padding: 1.5rem 0;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 0.75rem;
+        }
+
+        .footer-logo img {
+            height: 40px;
+        }
+
+        .footer-info p {
+            color: #9ca3af;
+            font-size: 0.875rem;
+        }
+
+        /* Responsive */
+        @media (min-width: 640px) {
+            .hero-buttons {
+                flex-direction: row;
+            }
+
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .contact-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .contact-buttons {
+                flex-direction: row;
+            }
+
+            .footer-content {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .nav {
+                display: flex;
+            }
+
+            .hero {
+                text-align: left;
+            }
+
+            .hero-text {
+                max-width: 600px;
+            }
+
+            .about-content {
+                flex-direction: row;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .services-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="logo.jpeg" alt="MTF Dedetizadora Logo">
+                </div>
+                <nav class="nav">
+                    <a href="#servicos" title="Nossos serviços de controle de pragas">Serviços</a>
+                    <a href="#sobre" title="Sobre a MTF Dedetizadora">Sobre Nós</a>
+                    <a href="#instagram" title="Veja nossas fotos no Instagram">Instagram</a>
+                    <a href="#contato" title="Entre em contato com a MTF Dedetizadora">Contato</a>
+                </nav>
+                <a href="tel:+5511982233353" class="phone-btn" title="Ligar para MTF Dedetizadora">
+                    <i class="fas fa-phone-alt"></i> (11) 98223-3353
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-text">
+                <h1>Soluções profissionais em controle de pragas em Jarinu, Itatiba e Morungaba</h1>
+                <p>A MTF Dedetizadora oferece serviços completas de dedetização, controle de mosquitos, descupinização e limpeza de caixas d'água para garantir a saúde e bem-estar do seu ambiente.</p>
+                <div class="hero-buttons">
+                    <a href="https://wa.me/5511982233353?text=Olá! Gostaria de solicitar um orçamento para serviços de dedetização." class="whatsapp-btn" target="_blank" title="Solicitar orçamento via WhatsApp">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Orçamento
+                    </a>
+                    <a href="tel:+5511982233353" class="phone-btn-outline" title="Ligar para MTF Dedetizadora">
+                        <i class="fas fa-phone-alt"></i> (11) 98223-3353
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="services">
+        <div class="container">
+            <h2>Nossos Serviços de Controle de Pragas</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                        <h3>Dedetização</h3>
+                        <p>Controle eficaz contra baratas, formigas, pulgas, aranhas e outros insetos com métodos seguros.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-mosquito"></i>
+                        </div>
+                        <h3>Controle de Mosquitos</h3>
+                        <p>Eliminação e controle de mosquitos com técnicas seguras e eficientes.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-bug-slash"></i>
+                        </div>
+                        <h3>Descupinização</h3>
+                        <p>Tratamento especializado contra cupins para proteger estruturas e móveis em Jarinu, Itatiba e Morungaba.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <h3>Limpeza de Caixa D'água</h3>
+                        <p>Higienização e sanitização completa de reservatórios de água para garantir qualidade.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Sobre a MTF Dedetizadora</h2>
+                    <p>Somos uma empresa especializada em controle de pragas urbanas em Jarinu, Itatiba e Morungaba, com foco na qualidade e eficiência dos serviços prestados.</p>
+                    <p>Com profissionais altamente qualificados e técnicas modernas, garantimos resultados duradouros e seguros para residências e empresas na região.</p>
+                    
+                    <div class="tecnico-info">
+                        <h3>Nosso Técnico Responsável</h3>
+                        <div class="tecnico-card">
+                            <div class="tecnico-avatar">M</div>
+                            <div class="tecnico-details">
+                                <h4>Márcio</h4>
+                                <p>Técnico Responsável</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="benefits-card">
+                    <h3>Por que escolher a MTF Dedetizadora?</h3>
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <div class="benefit-check"><i class="fas fa-check"></i></div>
+                            <div class="benefit-content">
+                                <h4>Profissionais qualificados</h4>
+                                <p>Equipe treinada e certificada para todos os serviços de controle de pragas</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-check"><i class="fas fa-check"></i></div>
+                            <div class="benefit-content">
+                                <h4>Produtos seguros</h4>
+                                <p>Utilizamos produtos registrados e aprovados pelos órgãos competentes</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-check"><i class="fas fa-check"></i></div>
+                            <div class="benefit-content">
+                                <h4>Atendimento rápido</h4>
+                                <p>Agendamento facilitado e pronto atendimento em Jarinu, Itatiba e Morungaba</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-check"><i class="fas fa-check"></i></div>
+                            <div class="benefit-content">
+                                <h4>Garantia de serviço</h4>
+                                <p>Compromisso com a eficiência e satisfação do cliente</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Section -->
+    <section id="instagram" class="instagram">
+        <div class="container">
+            <h2>Fotos de Nossos Trabalhos</h2>
+            <div class="instagram-grid">
+                <div class="instagram-frame">
+                    <img src="1.png" alt="Foto de Trabalho 1">
+                </div>
+                <div class="instagram-frame">
+                    <img src="2.png" alt="Foto de Trabalho 2">
+                </div>
+                <div class="instagram-frame">
+                    <img src="3.png" alt="Foto de Trabalho 3">
+                </div>
+                <div class="instagram-frame">
+                    <img src="4.png" alt="Foto de Trabalho 4">
+                </div>
+                <div class="instagram-frame">
+                    <img src="5.png" alt="Foto de Trabalho 5">
+                </div>
+                <div class="instagram-frame">
+                    <img src="6.png" alt="Foto de Trabalho 6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <div class="contact-header">
+                <h2>Entre em Contato com a MTF Dedetizadora</h2>
+                <p>Solicite um orçamento ou tire suas dúvidas sobre nossos serviços de controle de pragas</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3>Informações de Contato</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div class="contact-details">
+                                <h4>Telefone</h4>
+                                <p>(11) 98223-3353</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                            <div class="contact-details">
+                                <h4>WhatsApp</h4>
+                                <p>(11) 98223-3353</p>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 style="font-size: 0.875rem; font-weight: bold; margin-bottom: 0.5rem;">Áreas de Atendimento</h4>
+                            <p>Jarinu, Itatiba e Morungaba</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-buttons">
+                        <p>Entre em contato agora mesmo!</p>
+                        <a href="tel:+5511982233353" class="btn btn-primary" title="Ligar para MTF Dedetizadora">
+                            <i class="fas fa-phone-alt"></i> Ligar Agora
+                        </a>
+                        <a href="https://wa.me/5511982233353?text=Olá! Gostaria de solicitar um orçamento para serviços de dedetização." class="btn btn-outline" target="_blank" title="Solicitar orçamento via WhatsApp">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="MTF Dedetizadora Logo">
+                </div>
+                <div class="footer-info">
+                    <p>© 2024 MTF Dedetizadora. Todos os direitos reservados.</p>
+                    <p>Técnico Responsável: Márcio</p>
+                    <p>Jarinu, Itatiba e Morungaba, SP</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "MTF Dedetizadora",
+        "description": "Serviços profissionais de dedetização, desratização, descupinização e limpeza de caixas d'água em Jarinu, Itatiba e Morungaba.",
+        "url": "https://www.mtfdedetizadora.com.br",
+        "telephone": "+5511982233353",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Jarinu",
+            "addressRegion": "SP",
+            "addressCountry": "BR"
+        },
+        "areaServed": ["Jarinu", "Itatiba", "Morungaba"],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+5511982233353",
+            "contactType": "Customer Service",
+            "areaServed": "BR",
+            "availableLanguage": "Portuguese"
+        },
+        "sameAs": [
+            "https://wa.me/5511982233353",
+            "https://www.instagram.com/mtfdedetizadora"
+        ]
+    }
+    </script>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // WhatsApp click tracking
+        document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
+            link.addEventListener('click', function() {
+                console.log('WhatsApp button clicked');
+            });
+        });
+    </script>
+</body>
+</html>
